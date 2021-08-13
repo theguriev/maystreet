@@ -1,0 +1,27 @@
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button{
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+}
+
+button svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--text-color-secondary);
+}
+
+button svg:hover {
+  fill: var(--text-color-placeholder);
+}
+
+button svg:active {
+  fill: var(--text-color-regular);
+}

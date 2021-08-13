@@ -1,0 +1,32 @@
+import { useDispatch, useSelector } from 'react-redux'
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs/blocks'
+import { add, remove } from './actions'
+import { alertsSelector } from './selectors'
+
+<Meta title="Features/alerts" />
+
+### Alerts
+
+<Canvas>
+  <Story name="Default">
+    {() => {
+      const dispatch = useDispatch()
+      const alerts = useSelector(alertsSelector)
+      const handleAddClick = () => {
+        dispatch(add({ title: 'something', content: 'something', key: 'TICKER' }))
+      }
+      const handleRemoveClick = () => {
+        dispatch(remove(0))
+      }
+      return (
+        <div>
+          <button type="button" onClick={handleAddClick}>Add</button>
+          <button type="button" onClick={handleRemoveClick}>Remove</button>
+          <pre>
+            {alerts && JSON.stringify(alerts, null, 4)}
+          </pre>
+        </div>
+      )
+    }}
+  </Story>
+</Canvas>

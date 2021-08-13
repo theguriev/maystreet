@@ -1,0 +1,19 @@
+table{
+  width: 100%;
+}
+
+table th{
+  font-weight: bold;
+}
+
+table td,
+table th{
+  border-bottom: var(--table-border);
+  padding: 12px 0;
+  min-width: 0;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+}

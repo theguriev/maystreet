@@ -1,0 +1,41 @@
+.alert {
+  border: 1px solid var(--border-color-light);
+  border-radius: var(--border-radius-base);
+  padding: 25px;
+  position: relative;
+  margin-top: 20px;
+}
+
+button{
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+button svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--text-color-secondary);
+}
+
+button svg:hover {
+  fill: var(--text-color-placeholder);
+}
+
+button svg:active {
+  fill: var(--text-color-regular);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 10px;
+}

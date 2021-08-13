@@ -1,0 +1,68 @@
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: var(--color-overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.dialog {
+  margin-top: -200px;
+  width: 500px;
+  padding: 25px;
+  background: var(--color-white);
+  position: relative;
+  border-radius: var(--border-radius-base);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--dialog-box-shadow);
+}
+
+.header,
+.body {
+  padding-bottom: 30px;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ex-button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.ex-button svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--text-color-secondary);
+}
+
+.ex-button svg:hover {
+  fill: var(--text-color-placeholder);
+}
+
+.ex-button svg:active {
+  fill: var(--text-color-regular);
+}
+
+.title {
+  font-size: var(--font-size-large);
+}
